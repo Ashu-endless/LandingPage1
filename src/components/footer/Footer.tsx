@@ -9,6 +9,13 @@ const Footer:FC = () =>{
     
     return <>
     <footer className="bg-white dark:bg-gray-900">
+    <div className="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2">
+            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl">
+                Connect With Us
+            </h2>
+
+        </div>
+
     <div className="container p-6 mx-auto">
         <div className="lg:flex">
             <div className="w-full -mx-6 lg:w-2/5">
