@@ -1,5 +1,5 @@
 "use client";
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import Themebutton from "../themebutton/Themebutton";
 import Link from 'next/link';
 import Connect from "../contactmodal/Connect";
@@ -21,6 +21,12 @@ const Navbar:FC = () => {
       }}
   };
   //  window && window.addEventListener("scroll", changeNavbarColor);
+
+    useEffect(() => {
+      window.addEventListener("scroll", changeNavbarColor)
+    }, [])
+    
+
     return <> <header style={{zIndex:1}} className={`text-gray-600 body-font fixed top-0 w-full dark:text-gray-400 ${colorChange
     ? "bg-gradient-to-r from-blue-800 to-indigo-900 text-white"
     : ""}`}>
